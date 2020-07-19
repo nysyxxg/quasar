@@ -12,15 +12,16 @@
  * as published by the Free Software Foundation.
  */
 module co.paralleluniverse.quasar.core {
-    requires java.management;
-    requires java.instrument;
-    requires jdk.unsupported; // needed for ThreadAccess and ExtendedStackTraceHotSpot
-    
+//    requires java.management;
+//    requires java.instrument;
+//    requires jdk.unsupported; // needed for ThreadAccess and ExtendedStackTraceHotSpot
+
     requires org.objectweb.asm;
     requires org.objectweb.asm.util;
     requires org.objectweb.asm.commons;
     requires com.google.common;
-    requires static kryo; // automatic module
+    requires static kryo;
+    requires rt; // automatic module
     
     exports co.paralleluniverse.fibers;
     exports co.paralleluniverse.fibers.futures;
